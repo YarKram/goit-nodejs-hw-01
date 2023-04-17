@@ -31,8 +31,3 @@ function invokeAction({ action, id, name, email, phone }) {
 }
 
 invokeAction(argv);
-
-// listContacts();
-// getContactById("rsKkOQUi80UsgVPCcLZZW");
-// removeContact("1DEXoP8AuCGYc1YgoQ6hw");
-// addContact("Anna Rendt", "anna@gmail.com", "992-442-332");
