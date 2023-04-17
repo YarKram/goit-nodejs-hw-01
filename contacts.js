@@ -37,9 +37,10 @@ async function addContact(name, email, phone) {
 		email,
 		phone,
 	};
-	const newContacts = [...contacts, newContact];
-	console.table(newContacts);
-	return newContacts;
+	contacts.push(newContact);
+	await fs.writeFile(contactsPath, JSON.stringify(contacts, null, 2));
+	console.table(contacts);
+	return contacts;
 }
 
 module.exports = {
